@@ -28,17 +28,6 @@ dados do estudo de caso e quais repositórios aparecem (`repos.featured` e `repo
 - Foto: `public/foto-daniel.webp`
 - Prints do projeto: `public/projetos/relatos/`
 
-## Como publicar
-
-Opção mais simples, a Vercel (gratuita):
-1. Suba esta pasta para um repositório no GitHub.
-2. Em vercel.com, escolha "Add New Project" e importe o repositório. As configurações padrão servem.
-3. A cada `git push`, o site é atualizado sozinho.
-
-Alternativas: Netlify ou Cloudflare Pages (publicando a pasta `out`) e GitHub Pages. Se o site ficar
-em um subcaminho (como `usuario.github.io/portfolio`), é preciso configurar `basePath` no
-`next.config.mjs`. Em domínio próprio ou na raiz, não precisa.
-
 ## Estrutura
 
 ```

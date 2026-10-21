@@ -1,4 +1,4 @@
-// Único lugar com seus dados pessoais. Só entra aqui o que você informou ou confirmou.
+// Único lugar com seus dados pessoais.
 export type Level = "verde" | "amarelo" | "ciano";
 
 export const levels: Record<Level, string> = {
@@ -13,7 +13,7 @@ type Fallback = { description: string | null; language: string | null };
 export const site = {
   name: "Daniel Gabriel",
   headline: "Desenvolvedor backend em formação",
-  description: "Portfólio de Daniel Gabriel, desenvolvedor backend em formação.",
+  description: "Portfólio de Daniel Gabriel",
   links: {
     github: "https://github.com/daneelgt",
     linkedin: "https://www.linkedin.com/in/danelg/",
@@ -21,8 +21,8 @@ export const site = {
   },
 
   about: [
-    "Estagio na Feluma, em Belo Horizonte, no suporte de TI: formatação de máquinas e demandas gerais da área. Curso Análise e Desenvolvimento de Sistemas e estudo backend com Java e Python.",
-    "Já usei Arch Linux bastante e montei um servidor NAS caseiro num celular Android. No estágio, participei do desenvolvimento de uma plataforma interna de relatos de equipamentos via QR Code, com Next.js, TypeScript e PostgreSQL, atuando na lógica e em melhorias de front e back.",
+    "Estagio na Feluma, em Belo Horizonte, no suporte de TI: formatação de máquinas e demandas gerais da área. Curso Análise e Desenvolvimento de Sistemas e estudo Back-End com Java e Python.",
+    "Já usei Arch Linux bastante e montei um servidor NAS caseiro num celular Android. No estágio, participei do desenvolvimento de uma plataforma interna de relatos de equipamentos via QR Code, com Next.js, TypeScript e PostgreSQL, atuando na lógica e em melhorias de Frontend e Backend.",
     "Meu objetivo é me tornar desenvolvedor backend.",
   ],
 
@@ -83,7 +83,7 @@ export const site = {
       "Sistema interno em que o usuário escaneia o QR Code de um equipamento (mesas, totens e impressoras), escolhe o problema e envia o relato. A equipe acompanha tudo numa área administrativa com login, gráficos, lista de relatos com filtros e geração dos QR Codes.",
     stack: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Tailwind CSS"],
     contribution:
-      "Desenvolvido em dupla, com apoio do Claude. Minha atuação foi na lógica e em melhorias de front e back.",
+      "Desenvolvido em dupla, com apoio do Claude. Minha atuação foi na lógica e em melhorias de Frontend e Backend.",
     note: "Uso interno: o repositório é privado e não há demonstração pública. Os prints abaixo têm dados e identificações ocultados.",
     images: [
       { src: "/projetos/relatos/print-1.webp", alt: "Página pública com o passo a passo para relatar um problema", caption: "Página aberta ao escanear o QR Code" },
@@ -116,7 +116,7 @@ export const site = {
       company: "Feluma, Belo Horizonte",
       points: [
         "Formatação de máquinas e atendimento de demandas gerais de TI.",
-        "Participação no desenvolvimento da plataforma interna de relatos de equipamentos, na lógica e em melhorias de front e back.",
+        "Participação no desenvolvimento da plataforma interna de relatos de equipamentos, contribuindo na implementação da lógica de negócio e em melhorias no Frontend e Backend.",
       ],
     },
   ],

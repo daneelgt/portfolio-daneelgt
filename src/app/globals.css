@@ -13,9 +13,6 @@ html {
 
 body {
   @apply bg-tinta font-sans text-texto antialiased;
-  /* grade de pontos discreta, como numa mesa de design */
-  background-image: radial-gradient(rgba(243, 243, 243, 0.07) 1px, transparent 1px);
-  background-size: 24px 24px;
 }
 
 ::selection {

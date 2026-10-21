@@ -96,7 +96,7 @@ const noise = (...values: number[]) => {
 const signed = (value: number) => (value > 0 ? `+${value}` : value < 0 ? `−${-value}` : '0');
 
 const TechText = ({
-  text = 'React Bits',
+  text = 'React',
   fontFamily = '',
   fontWeight = 600,
   fontSize = 150,
