@@ -3,6 +3,7 @@ import { SelectionBox } from "@/components/ui/SelectionBox";
 import { Section } from "@/components/ui/Section";
 import { site } from "@/content/site";
 import { getRepos, type Repo } from "@/lib/github";
+import { withBasePath } from "@/lib/site-path";
 
 function RepoCard({ repo }: { repo: Repo }) {
   return (
@@ -48,9 +49,9 @@ export async function Projects() {
         <div className="mt-8 grid gap-5 sm:grid-cols-2">
           {study.images.map((img) => (
             <figure key={img.src}>
-              <a href={img.src} target="_blank" rel="noopener noreferrer" className="block border border-linha bg-painel">
+              <a href={withBasePath(img.src)} target="_blank" rel="noopener noreferrer" className="block border border-linha bg-painel">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={img.src} alt={img.alt} loading="lazy" className="aspect-[2/1] w-full object-contain" />
+                <img src={withBasePath(img.src)} alt={img.alt} loading="lazy" className="aspect-[2/1] w-full object-contain" />
               </a>
               <figcaption className="mt-2 text-sm text-apagado">{img.caption}</figcaption>
             </figure>

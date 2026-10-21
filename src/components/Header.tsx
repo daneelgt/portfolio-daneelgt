@@ -1,5 +1,6 @@
 import { site } from "@/content/site";
 import Image from "next/image";
+import { withBasePath } from "@/lib/site-path";
 
 const nav = [
   { href: "#sobre", label: "Sobre" },
@@ -18,7 +19,7 @@ export function Header() {
           className="inline-flex items-center gap-2 font-mono text-sm text-texto"
         >
           <Image
-            src="/foto-daniel.webp"
+            src={withBasePath("/foto-daniel.webp")}
             alt=""
             width={32}
             height={32}

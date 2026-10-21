@@ -11,7 +11,14 @@ npm install
 npm run dev      # abre em http://localhost:3000
 ```
 
-## Como gerar o site para publicar
+## Publicação no GitHub Pages
+
+O deploy é feito automaticamente pelo GitHub Actions a cada push na branch `main`.
+o site ficará disponível em:
+
+<https://daneelgt.github.io/portfolio-daneelgt/>
+
+## Como gerar o site localmente
 
 ```bash
 npm run build    # cria a pasta "out" com o site estático

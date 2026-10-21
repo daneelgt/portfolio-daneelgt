@@ -2,6 +2,7 @@ import { Github, Linkedin } from "lucide-react";
 import { SelectionBox } from "@/components/ui/SelectionBox";
 import TechText from "@/components/ui/TechText";
 import { site } from "@/content/site";
+import { withBasePath } from "@/lib/site-path";
 
 const linkClass =
   "inline-flex items-center gap-2 rounded-md border border-linha px-4 py-2 text-sm text-suave transition-colors hover:border-apagado hover:text-texto";
@@ -54,7 +55,7 @@ export function Hero() {
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/foto-daniel.webp"
+          src={withBasePath("/foto-daniel.webp")}
           alt="Foto de Daniel Gabriel"
           width={720}
           height={720}
