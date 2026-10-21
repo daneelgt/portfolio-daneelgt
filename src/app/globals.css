@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  background-color: #120f17;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-tinta font-sans text-texto antialiased;
+  /* grade de pontos discreta, como numa mesa de design */
+  background-image: radial-gradient(rgba(243, 243, 243, 0.07) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+::selection {
+  background: rgba(125, 207, 255, 0.28);
+}
+
+.email-address {
+  min-width: 0;
+  flex: 1 1 0%;
+  overflow-wrap: anywhere;
+}
+
+.contact-email {
+  width: fit-content;
+  max-width: 100%;
+}
+
+/* O foco do teclado usa o mesmo contorno tracejado do tema. */
+:focus-visible {
+  outline: 2px dashed #7dcfff;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
