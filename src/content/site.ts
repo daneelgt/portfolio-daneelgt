@@ -83,7 +83,7 @@ export const site = {
       "Sistema interno em que o usuário escaneia o QR Code de um equipamento (mesas, totens e impressoras), escolhe o problema e envia o relato. A equipe acompanha tudo numa área administrativa com login, gráficos, lista de relatos com filtros e geração dos QR Codes.",
     stack: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Tailwind CSS"],
     contribution:
-      "Desenvolvido em dupla, com apoio do Claude. Minha atuação foi na lógica e em melhorias de Frontend e Backend.",
+      "Desenvolvido junto com TaynaraLelis, com apoio do Claude. Minha atuação foi na lógica e em melhorias de Frontend e Backend.",
     note: "Uso interno: o repositório é privado e não há demonstração pública. Os prints abaixo têm dados e identificações ocultados.",
     images: [
       { src: "/projetos/relatos/print-1.webp", alt: "Página pública com o passo a passo para relatar um problema", caption: "Página aberta ao escanear o QR Code" },

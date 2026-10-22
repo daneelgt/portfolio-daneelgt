@@ -9,9 +9,9 @@ const linkClass =
 
 export function Hero() {
   return (
-    <section id="inicio" aria-labelledby="titulo" className="grid items-center gap-14 py-20 md:min-h-[85vh] md:grid-cols-[1fr_auto]">
+    <section id="inicio" aria-labelledby="titulo" className="grid items-center gap-8 py-12 sm:gap-14 sm:py-20 md:min-h-[85vh] md:grid-cols-[1fr_auto]">
       <div>
-        <div aria-hidden="true" className="h-40 w-full max-w-[680px] sm:h-48">
+        <div aria-hidden="true" className="h-28 w-full max-w-[680px] sm:h-40 lg:h-48">
           <TechText
             text={site.name}
             fontWeight={600}
@@ -26,16 +26,16 @@ export function Hero() {
             accentColor="currentColor"
             draggable={false}
             clickKick={false}
-            sweep
+            sweep={false}
             speed={1}
           />
         </div>
         <h1 id="titulo" className="sr-only">
           {site.name}
         </h1>
-        <p className="mt-6 max-w-prose text-xl text-suave">{site.headline}</p>
-        <p className="mt-3 max-w-prose text-suave">Estagiário de suporte de TI na Feluma, em Belo Horizonte.</p>
-        <div className="mt-6 flex flex-wrap gap-3">
+        <p className="mt-5 max-w-prose text-lg text-suave sm:mt-6 sm:text-xl">{site.headline}</p>
+        <p className="mt-2 max-w-prose text-sm text-suave sm:mt-3 sm:text-base">Estagiário de suporte de TI na Feluma, em Belo Horizonte.</p>
+        <div className="mt-5 flex flex-wrap gap-2 sm:mt-6 sm:gap-3">
           <a className={linkClass} href="#projetos">
             Ver projetos
           </a>
@@ -51,7 +51,7 @@ export function Hero() {
       <SelectionBox
         label="daneelgt"
         showSize
-        className="mx-auto w-full max-w-64 sm:w-72 md:mx-0"
+        className="mx-auto w-full max-w-52 sm:max-w-64 sm:w-72 md:mx-0"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img

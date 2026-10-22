@@ -55,7 +55,7 @@ export function Skills() {
         />
       )}
       <Section id="habilidades" title="Habilidades">
-        <ul className="mb-10 flex flex-wrap gap-3" aria-label="Legenda dos níveis">
+        <ul className="mb-7 flex flex-wrap gap-3 sm:mb-10" aria-label="Legenda dos níveis">
           {order.map((tone) => (
             <li key={tone}>
               <span className="inline-flex items-center gap-2 text-sm text-suave">
@@ -69,9 +69,9 @@ export function Skills() {
           ))}
         </ul>
 
-        <div className="grid gap-6 sm:grid-cols-2">
+        <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
           {site.skills.map((group) => (
-            <div key={group.title} className="skill-crosshair-target p-5">
+            <div key={group.title} className="skill-crosshair-target p-3 sm:p-5">
               <h3 className="text-base font-medium">{group.title}</h3>
               <ul className="mt-4 flex flex-wrap gap-2">
                 {group.items.map((item) => (

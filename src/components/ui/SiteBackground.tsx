@@ -29,7 +29,7 @@ export function SiteBackground() {
           chromaticAberration={0}
           mouseReact
           pageLoadAnimation
-          pause={false}
+          pause
           lightMode={false}
         />
       </div>

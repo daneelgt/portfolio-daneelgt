@@ -33,8 +33,8 @@ export async function Projects() {
 
   return (
     <Section id="projetos" title="Projetos">
-      <SelectionBox className="p-6 sm:p-8">
-        <h3 className="text-xl font-semibold">{study.title}</h3>
+      <SelectionBox className="p-4 sm:p-8">
+        <h3 className="text-lg font-semibold sm:text-xl">{study.title}</h3>
         <p className="mt-4 max-w-prose text-suave">{study.summary}</p>
         <ul className="mt-5 flex flex-wrap gap-2" aria-label="Tecnologias usadas">
           {study.stack.map((s) => (
@@ -46,7 +46,7 @@ export async function Projects() {
         <p className="mt-5 max-w-prose text-suave">{study.contribution}</p>
         <p className="mt-2 max-w-prose text-sm text-apagado">{study.note}</p>
 
-        <div className="mt-8 grid gap-5 sm:grid-cols-2">
+        <div className="mt-6 grid gap-4 sm:mt-8 sm:grid-cols-2 sm:gap-5">
           {study.images.map((img) => (
             <figure key={img.src}>
               <a href={withBasePath(img.src)} target="_blank" rel="noopener noreferrer" className="block border border-linha bg-painel">
@@ -59,15 +59,15 @@ export async function Projects() {
         </div>
       </SelectionBox>
 
-      <h3 className="mb-5 mt-14 text-xl font-semibold">No GitHub</h3>
-      <div className="grid gap-6 sm:grid-cols-2">
+      <h3 className="mb-4 mt-10 text-lg font-semibold sm:mb-5 sm:mt-14 sm:text-xl">No GitHub</h3>
+      <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
         {featured.map((r) => (
           <RepoCard key={r.name} repo={r} />
         ))}
       </div>
 
-      <h3 className="mb-5 mt-10 text-base font-medium text-suave">Estudos</h3>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <h3 className="mb-4 mt-8 text-base font-medium text-suave sm:mb-5 sm:mt-10">Estudos</h3>
+      <div className="grid gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
         {studies.map((r) => (
           <RepoCard key={r.name} repo={r} />
         ))}

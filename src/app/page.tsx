@@ -14,7 +14,7 @@ export default function Home() {
       <SiteBackground />
       <div className="relative z-10">
         <Header />
-        <main className="mx-auto max-w-5xl px-6">
+        <main className="mx-auto max-w-5xl px-4 sm:px-6">
           <Hero />
           <About />
           <Skills />
@@ -22,7 +22,7 @@ export default function Home() {
           <Trajetoria />
           <Contact />
         </main>
-        <footer className="mx-auto max-w-5xl border-t border-linha px-6 py-8 text-sm text-apagado">
+        <footer className="mx-auto max-w-5xl border-t border-linha px-4 py-6 text-sm text-apagado sm:px-6 sm:py-8">
           {new Date().getFullYear()} {site.name}
         </footer>
       </div>

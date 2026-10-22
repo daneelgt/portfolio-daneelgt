@@ -2,15 +2,15 @@ import { Github, Linkedin, Mail } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { site } from "@/content/site";
 
-const row = "inline-flex items-center gap-3 text-lg text-suave transition-colors hover:text-texto";
+const row = "inline-flex items-center gap-3 text-base text-suave transition-colors hover:text-texto sm:text-lg";
 
 export function Contact() {
   return (
     <Section id="contato" title="Contato">
-      <p className="max-w-prose text-lg text-suave">
+      <p className="max-w-prose text-base text-suave sm:text-lg">
         Estou buscando oportunidades na área de TI, com foco em desenvolvimento backend.
       </p>
-      <ul className="mt-8 space-y-4">
+      <ul className="mt-6 space-y-3 sm:mt-8 sm:space-y-4">
         <li>
           <a className={`${row} contact-email`} href={`mailto:${site.links.email}`}>
             <Mail size={20} className="shrink-0" aria-hidden="true" />
